@@ -16,5 +16,10 @@ class array {
         }
         System.out.println(arr1);
         System.out.println(Arrays.toString(arr1));
+
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println("value at index " + i + "is " + arr1[i]);
+        }
+
     }
 }
