@@ -8,7 +8,6 @@ public class secondl {
                 max=arr[i];
             }
         }
-        System.out.println("Max element is: "+max);
         int secondmax=0;
         for (int i=0;i<arr.length;i++){
             if (arr[i]>secondmax && arr[i]<max){
