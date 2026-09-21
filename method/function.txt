@@ -1,0 +1,101 @@
+objects ----state and behaviuor 
+state----variable
+behaviour-------methods/functions
+
+method is  block of code , and used for reusability, keep code clean, must belong to a class or interface. 
+return type
+parameter list
+
+
+can be final, static ,abstract, default ----------excess modifier ke according public.........and all
+
+
+METHODS IN JAVA------>in java methods are blocks of code that perform a specific task . a ,ethod allows us to reuse the code , improving effeciency and organisation . all methods in java must belomng to class 
+advantages of methods-->
+1. reusability--methods allow us to write code once and use it many times.
+2. abstraction--methods allow us to abstract complex logic and provide a simple interface for others to use.
+3. encapsulation--it allow to encapsulate complex logicand data.
+4. modularity--methods allows us to break code into small more manageable units , imroving the modularity of code.
+5. customisation--easy to customise a specific task.
+6. improve performance--by organising the code into well structured ,methods , it can improve performance by reducing the ammount of code . 
+
+
+methos signature--->
+
+
+
+access specifier.   return type     name.   parameter list
+     |               |               |          |
+public             int              f1(int x, int y){  
+    if(x>y)
+    return x;
+    else
+    return y:
+}
+
+1.  modifier-----it  specify the method access level(public , private , protected,default)
+2.  return type-- the type of the value return or void -if no value is return. 
+3.  method name -- it is java naming convention , it should start with a lower case verb and use camel case for multiple words.
+4.  parameters-- a list of input values , empty parenthesis are used if no parameters are needed
+
+5, methods body -- it contains the logic to be executed
+
+PARAMETER OR ARGUMENT --- parameter are those which we give during defining the func or method , but arguments are those which we pass during calling the method or func.
+
+1. predefined 
+2. user-defined
+3. static 
+4. instance 
+5. parameterized 
+5. non parameterised
+
+types of methods---
+1. predefined methods ----> these are built -in methods provided  by the jdk with its standard class library, they are available for use without explicit defintion. need object(depends).
+class demo{
+    public void calculatelength(){
+        string str="my new method";
+        int strLength=str.length();
+        sop(strLnegth);
+    }
+}
+
+
+2. user-defined methods---->these are mehtods craeted by progrsmmer to perofrm specific task.
+
+void add(){
+    int x=10;
+    int y=20;
+    int result=x+y;
+    sop("addition of two numbers: " + result);
+
+}
+
+3. static ----> these methods belong to class itself rather than many specific object , static methods can directly acces static var. and other static methods .
+public class mehtodexample{
+    publci static void greet(){
+        sop("hello");
+    }
+    psvm{
+        greet();
+    }
+}
+
+
+4. instance method------->these methods belong to object and can access both ---instance variables and other instance methods. they require an object to be crreated before they can be invoked (calling)
+
+public class mehtodexample{
+    publci  void greet(){
+        sop("hello");
+    }
+    psvm{
+        methodexample obj=new methodexample();
+        obj.greet();
+        
+    }
+}
+
+5. parameterised methods ----> that can acces one or more than arguments when it is called .arguments are defined within the parenthesis in the method sugnature.
+
+
+
+6. non -parameterised methods---doesnt accept any arguments when it is called , its parenthesis in the method signature are empty.
