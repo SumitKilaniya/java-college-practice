@@ -10,7 +10,7 @@ class runsum {
             result[i] = result[i - 1] + nums[i];
 
         }
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
     }
 
 }
