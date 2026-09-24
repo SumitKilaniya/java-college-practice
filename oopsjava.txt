@@ -101,8 +101,6 @@ psvm{
 }
 }
 
-
-
 singleton class------->a class  that allows only one object to be created ----one user can login at one place or device at a time often used in loging, caching , db connections , 
 
 example ----=->
@@ -121,3 +119,58 @@ class main{
         ........
     }
 }
+
+CONSTRUCTOR:-------->
+CONSTRUCTOR is a special type of method that is used to initialise the objects . it has same name as class. it has no return type , not even void . constructor get called automatically when an object is created.
+
+example------>
+
+
+class myclass{
+    int num1;
+    int num2;
+    myclass(){
+        this.num1=10;
+        this.num2=100;
+    }
+}
+class main{
+    psvm{
+
+    }
+}
+
+
+
+only instance var will be initialised by default value 0 not static var(class var)--initialise before use .
+default will be called anyway .
+
+class myclass{
+    int num1;
+    int num2;
+    myclass(int x , int y){
+        this.num1=x;
+        this.num2=y;
+    }
+}
+class main{
+    psvm{
+ myclass obj=new myclass();
+ obj.num1;
+
+ myclass obj2=new myclass(10,100);
+ obj2.num2;
+    }
+}
+
+current class ke var ka refrence hold krta h ---------this 
+
+
+TYPES OF CONSTRUCTORS---
+1. DEFAULT 
+2. NON ARGUMENT
+3. PARAMETERISED 
+
+THIS KEYWORD-------->this is a refrence variable that refer to the current object .
+used when there is confusion between local or instance  variable.
+
