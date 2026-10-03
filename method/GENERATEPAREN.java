@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class GenerateParentheses {
+public class GENERATEPAREN {
 
     public static List<String> generateParenthesis(int n) {
 
